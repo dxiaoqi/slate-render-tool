@@ -1,0 +1,44 @@
+{
+  "name": "slate-render-tool",
+  "version": "1.0.0",
+  "description": "slate render tool",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build:types": "tsc",
+    "build": "npm run build:types && rollup --config",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dxiaoqi/slate-render-tool.git"
+  },
+  "keywords": [
+    "slate",
+    "slate-render",
+    "rollup",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dxiaoqi/slate-render-tool/issues"
+  },
+  "homepage": "https://github.com/dxiaoqi/slate-render-tool#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "rollup": "^2.75.6",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "@types/react": "^18.0.12",
+    "escape-html": "^1.0.3",
+    "slate-hyperscript": "^0.77.0"
+  }
+}
